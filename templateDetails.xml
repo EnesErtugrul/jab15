@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0"
+           type="template"
+           client="site"
+           method="upgrade">
+	<name>test</name>
+	<creationDate>31 May 2015</creationDate>
+	<author>Optimum Theme</author>
+	<authorEmail>info@optimumtheme.com</authorEmail>
+	<authorUrl>http://optimumtheme.com</authorUrl>
+	<copyright>Copyright (C) 2013 - 2015 Optimum Theme. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>1.0.0</version>
+	<description>This is a test template for JandBeyond 2015 by Enes Ertugrul - Optimum Theme</description>
+	<files>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>css</folder>
+		<folder>config</folder>
+		<folder>tpls</folder>
+		<filename>apple-touch-icon.png</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>favicon.png</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+
+	<positions>
+		<position>logo</position>
+		<position>menu</position>
+		<position>slideshow</position>
+		<position>top-a</position>
+		<position>top-b</position>
+		<position>top-c</position>
+		<position>bottom-a</position>
+		<position>bottom-b</position>
+		<position>right</position>
+		<position>offcanvas</position>
+	</positions>
+
+	<config>
+		<fields name="params">
+			<fieldset name="General">
+			
+				<field name="layout"
+				       type="filelist"
+				       default="default"
+				       label="Layout"
+				       directory="templates/jab15/tpls"
+				       filter="\.php"
+				       stripext="true"
+				       hide_none="true"
+				       description="Choose the layout for this template"/>
+				       
+				<field type="text" name="setGeneratorTag" label="Generator Tag" description="Set your custom Generator Tag to display in the source." default="Optimum Theme" size="56" />
+				
+				<field name="output" label="Hide Component" type="radio" default="1" class="btn-group">
+				    <option value="1">JYES</option>
+				    <option value="0">JNO</option>
+				</field>
+				
+				<field type="radio" name="bootstrap" class="btn-group btn-group-yesno" label="Load Bootstrap" description="Enable template's Bootstrap" default="1">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				
+				<field type="radio" name="fontAwesome" class="btn-group btn-group-yesno" label="Load FontAwesome" description="Enable FontAwesome icons" default="1">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				
+				<field type="radio" name="loadJui" class="btn-group btn-group-yesno" label="Load Joomla UI" description="Enable core JUI" default="1">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>
